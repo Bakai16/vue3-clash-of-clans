@@ -1,9 +1,12 @@
 <template>
   <div class="card">
+    <div v-if="imgUrl" class="card-img__wrapper">
+      <img class="card-img" :src="imgUrl " :alt=" title" />
+    </div>
     <span class="card-name">{{ name }}</span>
     <span class="card-title">{{ title }} </span>
     <div class="card-body">
-        <slot></slot>
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -13,12 +16,15 @@ export default {
   props: {
     name: {
       type: String,
-      require: true,
+      require: true
     },
     title: {
       type: String,
-      require: true,
+      require: true
     },
+    imgUrl: {
+      type: String
+    }
   }
 }
 </script>

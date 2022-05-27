@@ -6,15 +6,21 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@mdi/font": "5.9.55",
     "core-js": "^3.22.5",
+    "roboto-fontface": "*",
     "vue": "^3.2.33",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "vuetify": "npm:@vuetify/nightly@next",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "5.0.4",
     "@vue/cli-service": "~5.0.4",
     "@vue/compiler-sfc": "^3.2.33",
     "node-sass": "^7.0.1",
-    "sass-loader": "^12.6.0"
+    "sass-loader": "^12.6.0",
+    "vue-cli-plugin-vuetify": "~2.5.0",
+    "webpack-plugin-vuetify": "^2.0.0-alpha.0"
   }
 }
