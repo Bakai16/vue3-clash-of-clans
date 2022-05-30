@@ -51,7 +51,7 @@ export default {
     return {
       items,
 
-      //slider
+      //carousel
       settings: {
         itemsToShow: 2,
         wrapAround: true,
